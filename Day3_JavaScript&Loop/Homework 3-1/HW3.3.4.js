@@ -1,34 +1,38 @@
 // 3.4 Javascript  Array 2 dimension for Diamond pattern
 
-debugger;
 function draw(n) {
-    text = '';
-    for (i = n; i > 0; i--) {
-        for (j = (n + (n - 1)); j >0 ; j--) {
-            if ( n*2<i+j || i>j ) {
-                text += '-';
-            } else {
-                text += '*';
-            }
+    let arr=[];
+    let text='';
+    for (let i=1; i<=n; i++){
+        for(let j=1; j<=(n-i); j++){
+            arr.push(text += "-");
         }
-        text += '\n';
+
+        for(let k=0; k<((2*i)-1); k++){
+            arr.push(text+= "*");
+        }
+        for(let m=1; m<=(n-i); m++){
+            arr.push(text+= "-");
+        }
+        text+='\n';
     }
-    for (i = 1; i<n ; i++) {
-        for (j = 0; j <n ; j++) {
-            if ( j>=i ) {
-                text += '*';
-            } else {
-                text += '_';
-            }
-        }
-        for(k=(n-1); k>0; k--){
-            if(k>i){
-                text+='*';
+
+    for(let i=1; i<n; i++){
+        for(let j=0; j<n; j++){
+            if(j>=i){
+                arr.push(text+="*");
             }else{
-                text += '_';
+                arr.push(text+="-");
             }
         }
-        text += '\n';
+        for(let m=n-1; m>0; m--){
+            if(m>i){
+                arr.push(text+="*");
+            }else{
+                arr.push(text+="-");
+            }
+        }
+        text+='\n';
     }
     console.log(text);
 }

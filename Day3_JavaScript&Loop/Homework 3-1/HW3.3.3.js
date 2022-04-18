@@ -1,30 +1,26 @@
 // 3.3 Javascript  Array function  2 dimension
 
 
-let n=[
-
-    ['*','_','_','_'],  //row1
-    ['*','*','_','_'],  //row2
-    ['*','*','*','_'],  //row3
-    ['*','*','*','*']   //row4
-];
-
-
 function draw(n){
-
-    text='';
-    for(let i=0; i<n.length; i++){
-        for(let j=0; j<n[i].length; j++){
-            text +=n[i][j].toString();
+    let arr=[];
+    text ='';
+    for(var i=0; i<n; i++){
+        for(var j=0; j<n; j++){
+            if(j<=i){
+                arr.push(text+='*');
+            }else{
+                arr.push(text+='-');
+            }
         }
-        text+='\n';
+        text +='\n';
     }
     console.log(text);
 }
-draw(n);
 
 
-
+draw(2);
+draw(3);
+draw(4);
 
 
 /*

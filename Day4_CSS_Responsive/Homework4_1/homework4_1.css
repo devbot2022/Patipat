@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+
+.flex-container{
+  height:275vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content:center;
+  justify-content:flex-start;
+}
+
+.item1, .item2, .item3,.item4,.item5,.item6,.item7,.item8,.item9{
+  width: 30%;
+  padding: 5px;
+  margin: 5px;
+  justify-items: center;
+}
+
+.item1{
+  height: 25%;
+}
+
+.item2{
+  height: 25%;
+
+}
+
+.item3{
+  height: 35%;
+}
+
+.item4{
+  height: 30%;
+}
+
+.item5{
+  height: 30%;
+}
+
+.item6{
+  height: 25%;
+}
+
+.item7{
+  height: 45%;
+}
+
+.item8{
+  height: 20%;
+}
+
+.item9{
+  height: 20%;
+}
+
+
+

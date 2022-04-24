@@ -1,0 +1,37 @@
+.container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+
+/*mobile view */
+
+.mobileOnly {
+  font-size: bold;
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .mobileOnly {
+
+      opacity: 1;
+  }
+}
+
+
+/*transform tag p*/
+
+.MobileContent {
+  color: red;
+  width: 100%;
+  margin: auto;
+  font-size: bold;
+  text-align: right;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .MobileContent {
+      opacity: 1;
+  }
+} 

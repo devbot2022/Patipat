@@ -1,0 +1,19 @@
+{
+    "JSON":
+        [
+        {"firstName":"Patipat"},
+        {"lastName":"Padpong"},
+        {"age":34},
+        {"gender":"male"},
+        {"address":{
+            "sub_district":"Samrong-nue",
+            "district":"Muang Samutprakarn",
+            "province":"Samutprakarn"
+        }},
+        {"contact":{
+            "mobile":"(+66)619951955",
+            "email":"patipat.developer@gmail.com"
+        }}
+    ]
+    
+}

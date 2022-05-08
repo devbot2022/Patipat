@@ -1,0 +1,17 @@
+.picture-card  {
+    display: flex;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: cursive;
+    text-align: center;
+    justify-content: center;
+}
+
+.picture-card img  {
+    background-color: rgb(226, 177, 177);
+    padding: 2px;
+    max-width: 90%;
+}
+

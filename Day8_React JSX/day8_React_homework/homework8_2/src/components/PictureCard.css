@@ -1,0 +1,9 @@
+.picture-card{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    row-gap: 16px;
+    column-gap: 16px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

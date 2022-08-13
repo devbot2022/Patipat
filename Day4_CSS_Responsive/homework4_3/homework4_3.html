@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./homework4_3.css">
+    <title>homework4_3</title>
+</head>
+<body>
+    <body class="grey">
+        <div class="container">
+            <!--Head Web logo-->
+            <div class="row justify-content-left logo h100">
+                <div class="col-auto"><img src="https://www.digitalskill.org/images/logo-thai-programmer-white.png" /></div>
+            </div>
+
+            <!--Navbar-->
+         
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Workshop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>
+
+
+                      <!--Member-->
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#list_Member">Member</a>
+                      </li>
+
+                      <!--Register-->
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                      </li>
+                    </ul>
+
+                    
+                    <!-- register nav-item to Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Register Form</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                 
+                                <!--register form-->
+                                <div style="width: 600px; margin:auto;">
+                                    <form>
+                                        <label>First Name:</label>
+                                        <input style="margin-left:100px" type="text" name="first name" size="15"/><br><br>
+                                        <label>Last Name:</label>
+                                        <input style="margin-left:100px" type="text" name="last name" size="15" /><br><br>
+                                        <label>Password:</label>
+                                        <input style="margin-left:110px" type="password" name="Password" size="15" /><br><br>
+                                        <label>Confirm Password:</label>
+                                        <input style="margin-left:50px" type="password" name="confirm Password" size="15" /><br><br>
+                                        <label>Email:</label>
+                                        <input style="margin-left:130px" type="email" name="Email" size="15" /><br><br>
+                                        <label>Confirm Email:</label>
+                                        <input style="margin-left:70px" type="email" name="Email" size="15" /><br><br>
+                                        <label>Birthday:</label>
+                                        <input style="margin-inline:1em;margin-left: 9em;" type="date" id="birthday" name="birthday" size="15"><br><br>
+                                        <label>Gender:</label>
+                                        <input style="margin-inline:1em;margin-left: 9em;" type="radio" id="Male" name="gender" value="Male" checked>
+                                        <label for="Male" selected >Male</label>
+                                        <input type="radio" id="Male" name="gender" value="Male">
+                                        <label for="feMale">Female</label>
+                                        <br>
+                                        <br>
+                                        <input style="margin-left:100px" type="Submit" value="submit">
+                                        <input type="Reset" value="reset">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+
+              <!--Member Modal to table-->
+              <div class="modal fade" id="list_Member">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <!--table-->
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Nick Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Apichart</td>
+                            <td>Sa-Lu</td>
+                            <td>Ae</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Pakaornpat</td>
+                            <td>amonlert-Panish</td>
+                            <td>Mint</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Inarm</td>
+                            <td>Sansudnanon</td>
+                            <td>Arm</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Natthawadee</td>
+                            <td>Chansirinukrau</td>
+                            <td>Bow</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Silapakarn</td>
+                            <td>Saniskosai</td>
+                            <td>Karn</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+              </div>
+              
+              
+
+              
+              <!--Carousel image slide-->
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://media-exp1.licdn.com/dms/image/C561BAQHxXv2vf79BiQ/company-background_10000/0/1641532301046?e=2147483647&v=beta&t=ZVesjmawldD84IFS1MEe7_riZyf5lQkL8AAkUI8r-ao" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/blog/Full+Stack.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://swansoftwaresolutions.com/wp-content/uploads/2020/04/05.14.20-Meet-a-Full-Stack-Developer-Vlad-Ryba.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.tangolearn.com/wp-content/uploads/2022/01/react-js.jpg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.itl.cat/pngfile/big/327-3274977_software-development.jpg" class="d-block w-100" alt="">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                  <!--Web content--> 
+                <div class="row content h150">Contents</div>
+                <div class="row brown h100">Website Footer</div>
+              </div>
+
+              
+    </body>
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
